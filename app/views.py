@@ -4,8 +4,8 @@ from flask import render_template
 @app.route('/')
 @app.route('/index')
 def index():
-    user = { 'nickname': 'Miguel' } # выдуманный пользователь
-    posts = [ # список выдуманных постов
+    user = { 'nickname': 'Miguel' }
+    posts = [
         {
             'author': { 'nickname': 'John' },
             'body': 'Beautiful day in Portland!'
