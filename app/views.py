@@ -19,5 +19,3 @@ def home():
         title = 'Home',
         user = user,
         posts = posts)
-
-app = Flask(__name__)
