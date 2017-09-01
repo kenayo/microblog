@@ -3,7 +3,7 @@ from flask import render_template
 
 @app.route('/')
 @app.route('/index')
-def index():
+def home():
     user = { 'nickname': 'Miguel' }
     posts = [
         {
@@ -19,3 +19,5 @@ def index():
         title = 'Home',
         user = user,
         posts = posts)
+
+app = Flask(__name__)
